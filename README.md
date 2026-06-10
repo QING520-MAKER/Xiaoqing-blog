@@ -2,12 +2,12 @@
 
 Xiaoqing Blog 的聚合仓库：通过 Git Submodule 管理后端与前端代码，并在 `deploy/` 提供生产部署所需的 Dockerfile、Nginx 配置与基础设施脚本。
 
-仓库地址：`git@github.com:scc749/Xiaoqing-blog.git`
+仓库地址：`git@github.com:QING520-MAKER/Xiaoqing-blog.git`
 
 ## 概览
 
-- 后端：Go + Fiber，详细见 https://github.com/scc749/Xiaoqing-blog-api/blob/main/README.md
-- 前端：Next.js App Router，详细见 https://github.com/scc749/Xiaoqing-blog-web/blob/main/README.md
+- 后端：Go + Fiber，详细见 https://github.com/QING520-MAKER/Xiaoqing-blog-api/blob/main/README.md
+- 前端：Next.js App Router，详细见 https://github.com/QING520-MAKER/Xiaoqing-blog-web/blob/main/README.md
 - 部署：推荐同域名反代（`/api/*` → 后端，站点根路径 → 前端），相关文件在 `deploy/`
 
 ## 仓库结构
@@ -24,7 +24,7 @@ Xiaoqing Blog 的聚合仓库：通过 Git Submodule 管理后端与前端代码
 ### Clone（推荐）
 
 ```bash
-git clone --recurse-submodules git@github.com:scc749/Xiaoqing-blog.git
+git clone --recurse-submodules git@github.com:QING520-MAKER/Xiaoqing-blog.git
 ```
 
 ### 同步到主仓库锁定版本
@@ -51,8 +51,8 @@ git status
 
 本仓库仅负责聚合与部署入口；开发请直接按子模块 README 操作：
 
-- 后端本地开发：https://github.com/scc749/Xiaoqing-blog-api/blob/main/README.md
-- 前端本地开发：https://github.com/scc749/Xiaoqing-blog-web/blob/main/README.md
+- 后端本地开发：https://github.com/QING520-MAKER/Xiaoqing-blog-api/blob/main/README.md
+- 前端本地开发：https://github.com/QING520-MAKER/Xiaoqing-blog-web/blob/main/README.md
 
 ## 生产部署（Ubuntu + Docker + Nginx 同域）
 
@@ -302,7 +302,7 @@ pm2 startup systemd -u root --hp /root
 pm2 reload nimbus-web
 ```
 
-前端环境变量与构建要求见：https://github.com/scc749/Xiaoqing-blog-web/blob/main/README.md
+前端环境变量与构建要求见：https://github.com/QING520-MAKER/Xiaoqing-blog-web/blob/main/README.md
 
 ### 步骤 7：配置 Nginx 反向代理（同域 HTTPS）
 
