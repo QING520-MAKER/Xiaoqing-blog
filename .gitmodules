@@ -1,0 +1,8 @@
+[submodule "Xiaoqing-blog-api"]
+	path = Xiaoqing-blog-api
+	url = git@github.com:QING520-MAKER/Xiaoqing-blog-api.git
+	branch = main
+[submodule "Xiaoqing-blog-web"]
+	path = Xiaoqing-blog-web
+	url = git@github.com:QING520-MAKER/Xiaoqing-blog-web.git
+	branch = main
